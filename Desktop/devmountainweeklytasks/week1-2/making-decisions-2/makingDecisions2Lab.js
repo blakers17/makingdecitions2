@@ -106,7 +106,7 @@ if (myFavoriteNumbers.length < 7) {
   console.log("there are not enough in this array")
 } else {
   someNum = myFavoriteNumbers[6]
-  console.log("the 7th element in the array is:" + someNum);
+  console.log("the 7th element in the array is: " + someNum);
 }
 
 ////////// PROBLEM 8 //////////
@@ -119,8 +119,8 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 for (let i = 0; i < listOfNumbers.length; i++) {
-  if (listOfNumbers % 3 === 0)
-  console.log("is divisible by 3.")
+  if (listOfNumbers[i] % 3 === 0)
+  console.log(listOfNumbers[i] + " is divisible by 3." )
 }
 
 ////////// PROBLEM 9 //////////
@@ -157,7 +157,26 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+switch (letterGrade) {
+  case 'A' :
+    console.log("the student is doing excellently");
+    break;
+  case 'B' :
+    console.log("the student is diong well");
+    break;
+  case 'C' :
+    console.log("the student is doing alright");
+    break;
+  case 'D' :
+    console.log("the student is not doing very well");
+    break;
+  case 'F' :
+    console.log("the student is failing");
+    break;
+  default :
+    console.log("Not an eligible grade");
 
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -185,3 +204,14 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("devmountain");
+  } else if (i % 3 === 0) {
+  console.log("dev"); 
+   } else if ( i % 5 === 0) {
+    console.log("mountain"); 
+   }else {
+    console.log(i);
+  }
+   }
